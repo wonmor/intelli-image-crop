@@ -23,10 +23,13 @@ const result = removeImageBlanks(imageObject, padding, cornerRadius);
 3. Make sure the ```imageObject``` is rasterized (in pixels, not vectors) before you begin...
 ```
 // Rasterize the canvas
-      const rasterizedCanvas = document.createElement("canvas");
-      rasterizedCanvas.width = viewerCanvas.offsetWidth;
-      rasterizedCanvas.height = viewerCanvas.offsetHeight;
-      const rasterizedContext = rasterizedCanvas.getContext("2d");
-      rasterizedContext.drawImage(viewerCanvas, 0, 0);
-      ```
+const rasterizedCanvas = document.createElement("canvas");
+
+rasterizedCanvas.width = viewerCanvas.offsetWidth;
+rasterizedCanvas.height = viewerCanvas.offsetHeight;
+
+const rasterizedContext = rasterizedCanvas.getContext("2d");
+
+rasterizedContext.drawImage(viewerCanvas, 0, 0);
+```
 
