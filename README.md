@@ -5,6 +5,10 @@ Intelli Image Crop intelligently removes white spaces from raster images. For Ja
 
 ---
 
+<img width="500" alt="Screenshot-1" src="https://github.com/wonmor/intelli-image-crop/assets/35755386/a06027f0-3ebc-4ed2-a0cf-a11f685b92bc" />
+
+---
+
 ## Usage
 
 1. Import the module...
