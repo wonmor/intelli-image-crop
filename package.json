@@ -1,0 +1,23 @@
+{
+  "name": "intelli-image-crop",
+  "version": "1.0.0",
+  "description": "Intelli Image Crop intelligently removes white spaces from raster images.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wonmor/intelli-image-crop.git"
+  },
+  "keywords": [
+    "image",
+    "image-processing"
+  ],
+  "author": "Wonmo John Seong",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/wonmor/intelli-image-crop/issues"
+  },
+  "homepage": "https://github.com/wonmor/intelli-image-crop#readme"
+}
