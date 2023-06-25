@@ -1,6 +1,8 @@
 # intelli-image-crop
 Intelli Image Crop intelligently removes white spaces from raster images. For Javascript and Typescript users.
 
+[![npm version](https://badge.fury.io/js/intelli-image-crop.svg)](https://badge.fury.io/js/intelli-image-crop)
+
 ---
 
 ## Usage
