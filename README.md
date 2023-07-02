@@ -12,13 +12,13 @@ Intelli Image Crop intelligently removes white spaces from raster images. For Ja
 ## Usage
 
 1. Import the module...
-```
+```javascript
 const removeImageBlanks = require('intelli-image-crop'); // Legacy Javascript
 import removeImageBlanks from 'intelli-image-crop'; // Modern Javascript (React)
 ```
 
 2. Usage example...
-```
+```javascript
 const imageObject = ...; // Your image object
 const padding = 10; // Padding value
 const cornerRadius = 20; // Corner radius value
@@ -27,12 +27,14 @@ const result = removeImageBlanks(imageObject, padding, cornerRadius);
 ```
 
 3. Make sure the ```imageObject``` is rasterized (in pixels, not vectors) before you begin...
-```
+```javascript
 // Rasterize the canvas
 const rasterizedCanvas = document.createElement("canvas");
 
-rasterizedCanvas.width = viewerCanvas.offsetWidth;
-rasterizedCanvas.height = viewerCanvas.offsetHeight;
+// Make SURE you mutiply the width and height with the DPR (Device Pixel Ratio)
+// for support on high-resolution displays!
+rasterizedCanvas.width = viewerCanvas.offsetWidth * window.devicePixelRatio;
+rasterizedCanvas.height = viewerCanvas.offsetHeight * window.devicePixelRatio;
 
 const rasterizedContext = rasterizedCanvas.getContext("2d");
 
